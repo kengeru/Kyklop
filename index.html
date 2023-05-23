@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        
+    <div id="container">
+        <div id="setting">
+            <button id="bluetooth" type="button">Bluetooth</button>
+            <button id="calibration" type="button">Kalib. Displeje</button>
+        </div>
+
+        <div id="display">
+            <div id="lefttext">
+                <p>Horizontal</p>
+                <p>Lob ball Vertical</p>
+                <p>Random</p>
+            </div>
+            <div id="blankdisplay"></div>
+            <div id="middledisplay">
+                
+                <div id="leftside">
+                    <div id="dis_horizontal">
+                        <div id="dis_horizontal_1"></div>
+                        <div id="dis_horizontal_2"></div>
+                        <div id="dis_horizontal_3"></div>
+                        <div id="dis_horizontal_4"></div>
+                        <div id="dis_horizontal_5"></div>
+                    </div>
+
+                    <div id="dis_vertical">
+                        <div id="dis_vertical_1"></div>
+                        <div id="dis_vertical_2"></div>
+                        <div id="dis_vertical_3"></div>
+                        <div id="dis_vertical_4"></div>
+                    </div>
+
+                    <p id="dis_random">30</p>
+                </div>
+
+                <div id="middleside">
+                    <div id="dis_speeds">
+                        <p id="dis_speed1" class="speedtext">100</p>
+                        <p id="dis_speed2" class="speedtext">100</p>
+                    </div>
+                    <div id="dis_grid"></div>
+                </div>
+
+                <div id="rightside">
+                    <p id="dis_frequency">10</p>
+                    <div id="dis_something">
+                        <div id="dis_something_1"></div>
+                        <div id="dis_something_2"></div>
+                        <div id="dis_something_3"></div>
+                        <div id="dis_something_4"></div>
+                        <div id="dis_something_5"></div>
+                    </div>
+                    <div id="dis_wan">
+                        <div id="dis_wan1"><img src="assets/wan1.png" alt=""></div>
+                        <div id="dis_wan2"><img src="assets/wan2.png" alt=""></div>
+                        <div id="dis_wan3"><img src="assets/wan3.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="righttext">
+                <p>Frequency (Second)</p>
+                <p>IDontKnow</p>
+                <p>Wide</p>
+                <p>Among</p>
+                <p>Narrow</p>
+            </div>
+        </div>
+
+
+        <div id="buttons">
+            <div id="leftcolumn">
+                <div id="speed-buttons">
+                    <button id="speed-up" type="button"  onclick="SpeedUp()">&#9650;</button>
+                    <p>Speed</p>
+                    <button id="speed-down" type="button"  onclick="SpeedDown()">&#9660;</button>
+                </div>
+
+                <div id="horizontal-buttons">
+                    <button id="horizontal-left" type="button"  onclick="HorizontalLeft()">	&#9664;</button>
+                    <p>Horizontal</p>
+                    <button id="horizontal-right" type="button"  onclick="HorizontalRight()">&#9654;	</button>
+                </div>
+
+                <div id="vertical-buttons">
+                    <button id="vertical-up" type="button"  onclick="VerticalUp()">&#9650;</button>
+                    <p>Vertical</p>
+                    <button id="vertical-down" type="button"  onclick="VerticalDown()">&#9660;</button>
+                </div>
+
+                
+            </div>
+
+            <div id="middlecolumn">
+                <div id="reset-button">
+                    <button id="reset" type="button" onclick="Reset()"></button>
+                    <p>Reset</p>
+                </div>
+
+                <div id="onoff-button">
+                    <button id="onoff" type="button" onclick="OnOff()"></button>
+                    <p>ON/OFF</p>
+                </div>
+
+                <div id="stock-button">
+                    <button id="stock" type="button" onclick="Stock()"><span></span></button>
+                    <p>Stock</p>
+                </div>
+
+                <div id="wan-button">
+                    <button id="wan" type="button" onclick="WAN()"><img src="assets/wan.png" alt=""></button>
+                    <p>W/A/N</p>
+                </div>
+
+                <div id="pattern-button">
+                    <button id="pattern" type="button" onclick="Pattern()"><span></span></button>
+                    <p>Pattern</p>
+                </div>
+            </div>
+
+            <div id="rightcolumn">
+                <div id="frequency-buttons">
+                    <button id="frequency-up" type="button" onclick="FrequencyUp()">&#9650;</button>
+                    <p>Frequency</p>
+                    <button id="frequency-down" type="button" onclick="FrequencyDown()">&#9660;</button>
+                </div>
+
+                <div id="updown-buttons">
+                    <button id="updown-up" type="button"  onclick="HeightUp()">&#9650;</button>
+                    <p>Height</p>
+                    <button id="updown-down" type="button"  onclick="HeightDown()">&#9660;</button>
+                </div>
+
+                <div id="break-buttons">
+                    <button id="updown-break" type="button"  onclick="HeightStop()">&#10074;&#10074;</button>
+                    <p>Stop</p>
+                    <button id="none" type="button"><span></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+
+    
+    <script src="bluetooth.js"></script>
+    
+    </body>
+</html>
